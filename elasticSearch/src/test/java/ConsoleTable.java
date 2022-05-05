@@ -51,16 +51,6 @@ public class ConsoleTable {
             consoleTable.body = new Body();
         }
 
-        public ConsoleTableBuilder addHead(Cell cell){
-            consoleTable.header.addHead(cell);
-            return this;
-        }
-
-        public ConsoleTableBuilder addRow(List<Cell> row){
-            consoleTable.body.addRow(row);
-            return this;
-        }
-
         public ConsoleTableBuilder addHeaders(List<Cell> headers){
             consoleTable.header.addHeads(headers);
             return this;
@@ -71,33 +61,9 @@ public class ConsoleTable {
             return this;
         }
 
-        public ConsoleTableBuilder lineSep(String lineSep){
-            consoleTable.lineSep = lineSep;
-            return this;
-        }
 
         public ConsoleTableBuilder verticalSep(String verticalSep){
             consoleTable.verticalSep = verticalSep;
-            return this;
-        }
-
-        public ConsoleTableBuilder horizontalSep(String horizontalSep){
-            consoleTable.horizontalSep = horizontalSep;
-            return this;
-        }
-
-        public ConsoleTableBuilder joinSep(String joinSep){
-            consoleTable.joinSep = joinSep;
-            return this;
-        }
-
-        public ConsoleTableBuilder nullPolicy(NullPolicy nullPolicy){
-            consoleTable.nullPolicy = nullPolicy;
-            return this;
-        }
-
-        public ConsoleTableBuilder restrict(boolean restrict){
-            consoleTable.restrict = restrict;
             return this;
         }
 

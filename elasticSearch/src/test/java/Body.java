@@ -13,9 +13,6 @@ public class Body {
         rows = new ArrayList<>();
     }
 
-    public void addRow(List<Cell> row){
-        this.rows.add(row);
-    }
 
     public void addRows(List<List<Cell>> rows){
         this.rows.addAll(rows);

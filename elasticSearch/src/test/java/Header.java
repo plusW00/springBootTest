@@ -13,9 +13,6 @@ public class Header {
         this.cells = new ArrayList<>();
     }
 
-    public void addHead(Cell cell){
-        cells.add(cell);
-    }
 
     public void addHeads(List<Cell> headers){
         cells.addAll(headers);

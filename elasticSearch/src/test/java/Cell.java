@@ -18,9 +18,6 @@ public class Cell {
         this.value = value;
     }
 
-    public void setAlign(Align align) {
-        this.align = align;
-    }
 
     public Align getAlign() {
         return align;
